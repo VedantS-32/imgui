@@ -21,18 +21,7 @@ project "ImGui"
 		"imstb_textedit.h",
 		"imstb_truetype.h",
 		"imgui_demo.cpp",
-        "backends/imgui_impl_glfw.h",
-        "backends/imgui_impl_glfw.cpp",
-        "backends/imgui_impl_opengl3.h",
-        "backends/imgui_impl_opengl3.cpp",
-        "backends/imgui_impl_opengl3_loader.h"
 	}
-
-    includedirs
-    {
-        "%{IncludeDir.ImGui}",
-		"%{IncludeDir.GLFW}"
-    }
 
 	defines
 	{
