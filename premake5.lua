@@ -2,7 +2,7 @@ project "ImGui"
 	kind "StaticLib"
 	language "C++"
 	cppdialect "C++20"
-	staticruntime "Off"
+	staticruntime "on"
 	systemversion "latest"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
@@ -21,11 +21,6 @@ project "ImGui"
 		"imstb_textedit.h",
 		"imstb_truetype.h",
 		"imgui_demo.cpp",
-	}
-
-	defines
-	{
-		"IMGUI_STATIC_DEFINE"
 	}
 
 	filter "configurations:Debug"
