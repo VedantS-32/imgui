@@ -11,6 +11,7 @@ imgui.ini
 examples/*/Debug/*
 examples/*/Release/*
 examples/*/x64/*
+examples/*.tmp
 
 ## Visual Studio artifacts
 .vs
@@ -29,8 +30,9 @@ ipch
 ## Getting files created in JSON/Schemas/Catalog/ from a VS2022 update
 JSON/
 
-## Commonly used CMake directories
+## Commonly used CMake directories & CMake CPM cache
 build*/
+.cache
 
 ## Xcode artifacts
 project.xcworkspace
@@ -42,7 +44,13 @@ examples/*.out.js
 examples/*.out.wasm
 examples/example_glfw_opengl3/web/*
 examples/example_sdl2_opengl3/web/*
+<<<<<<< HEAD
 examples/example_emscripten_wgpu/web/*
+=======
+examples/example_sdl2_wgpu/web/*
+examples/example_sdl3_opengl3/web/*
+examples/example_sdl3_wgpu/web/*
+>>>>>>> d55608a5bb8c8a6890957b9e216f969c9407265b
 
 ## JetBrains IDE artifacts
 .idea
@@ -57,8 +65,18 @@ examples/example_null/example_null
 examples/example_sdl2_metal/example_sdl2_metal
 examples/example_sdl2_opengl2/example_sdl2_opengl2
 examples/example_sdl2_opengl3/example_sdl2_opengl3
+<<<<<<< HEAD
 examples/example_sdl2_sdlrenderer/example_sdl2_sdlrenderer
 
 ## Binary Files
 bin/
 bin-int/
+=======
+examples/example_sdl2_sdlrenderer2/example_sdl2_sdlrenderer2
+examples/example_sdl2_vulkan/example_sdl2_vulkan
+examples/example_sdl3_metal/example_sdl3_metal
+examples/example_sdl3_opengl3/example_sdl3_opengl3
+examples/example_sdl3_sdlgpu3/example_sdl3_sdlgpu3
+examples/example_sdl3_sdlrenderer3/example_sdl3_sdlrenderer3
+examples/example_sdl3_vulkan/example_sdl3_vulkan
+>>>>>>> d55608a5bb8c8a6890957b9e216f969c9407265b
